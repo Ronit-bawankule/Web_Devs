@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.in</title>
+    <style>
+        body{
+            background-color:#E3E6E6;
+            height: 1700px;
+            width:1511px;
+        }
+        *{
+            margin: 0px;
+           
+        }
+        .navbar{height: 60px;
+            background-color: #131921;
+            display: flex;
+            justify-content:space-between ;
+            width: 101%;
+        }
+
+        .box1{
+            display: flex;
+        }
+
+         .amlogo{
+            height: 68px;
+            width: 101px;
+            margin: 0;
+            position: relative;
+            padding-left: 11px;
+            
+         }
+
+         .i{
+            color: rgb(253, 253, 253);
+            padding-top: 22px;
+            padding-right:30px;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute ;
+            }
+         
+         .dt{
+            color: #CCCCCC;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            display: flex;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+
+            
+         }
+        .loc{
+            filter: invert(1);
+            display: flex;
+            height: 17px;
+            width: 18px;
+            padding-top: 26px;
+            padding-left: 18px
+        
+            
+        
+        
+              
+        }
+        .ind{
+            color: rgb(255, 255, 255);
+            margin-top: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            display: flex;
+        }
+        .both{
+            position: relative;
+            padding-left: 37px;
+            margin-top: -26px;}
+
+        .box3{
+            max-width: 100%;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+        
+        }
+
+        .drpdn{
+            height: 37px;
+            width:45px;
+            background-color: #e6e6e6;
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+            border: 0px;
+            text-align: center;
+            
+        }
+        #sbox{
+            display: flex;
+            height: 35px;
+            width: 700px;
+            border: 0px;
+        }
+        .box3 button{
+            display: flex;
+            height: 37px;
+            width: 40px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            background-color: #febd69;
+            border: 0px;
+        }
+        .box3 button img{
+            width: 25px;
+            height: 25px;
+            padding-top: 5px;
+        }
+
+        .op{
+            width: 100%;
+        }
+        .box4{
+            display: flex;
+            border: none;
+            outline: none;
+            margin: none;
+        }
+        .box4 img {
+            height: 21.2px;
+            width: 23.6px;
+            border: none;
+            padding-top: 23px;
+            
+            
+        }
+        .lang{
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 7px;
+            background:none;
+            border:none
+            }
+
+        .box5{
+            align-items: center;
+            margin-top: 12px;
+            line-height: 13px;
+        }
+        .hell{
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            border:none;
+            font-size: 12px;
+            margin:0 ;
+            padding-left: 4px;
+
+        }
+    
+        .sgn{
+            background: none;
+            color: #ffffff;
+            border: none;
+            margin:0 ;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .box6{
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            margin-top: 12px;
+            line-height: 13px
+        }
+        .rtn{
+            font-size: 12px;
+        }
+        .odr{
+            font-size: 14px;
+        }
+        .crt{
+            height: 26px;
+            width: 30px;
+            filter: invert(1);
+            display: flex;
+            overflow: hidden;
+        }
+        .ct{
+            padding-top: 20px;
+            padding-right: 11px;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            
+
+        }
+        .box7{
+        display: flex;
+        }
+
+        .with-img{
+            text-align: center;
+            color: #ffffff;
+            margin-top: 12px;
+            line-height: 5px;
+            position: relative;
+        }
+        .with-img p{
+            color:#f08804;
+            z-index: 1;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 5px;
+            padding-left: 13px;
+            position: absolute;
+
+        }
+        .navbar2{
+            background-color: #232f3e;
+            height: 39px;
+            width: 101%;
+            display: flex;
+            list-style-type: none;
+        }
+        
+        .lst{
+            display: flex;
+            list-style-type: none;
+            padding: 0px;
+        
+            
+        }
+        .each{
+            color: white;
+            padding-top: 5px;
+            padding-left: 10px;
+            margin: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        .opt{
+            border: none;
+            display: flex;
+            align-items: center;
+            padding-left: 11px;
+        }
+
+        .opt img{
+            height: 23px;
+            width: 16px;
+            border: none;
+            padding-right: 5px;
+            filter: invert(1);
+            
+        }
+
+        .opt p{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .navbar2 button{
+            background-color: #232f3e;
+            border: none;
+        }
+        .box1:hover{
+            border:1px solid #ffffff;
+            cursor: pointer;
+        }
+        
+
+        .both:hover{
+            border:1px solid #ffffff;
+            cursor: pointer;
+        }
+        .box4:hover{
+            border:1px solid #ffffff;
+            cursor: pointer;
+        }
+        .box5:hover{
+            border:1px solid #ffffff;
+            cursor: pointer;
+        }
+        .box6:hover{
+            border:1px solid #ffffff;
+            cursor: pointer;
+        }
+        .box7:hover{
+            border:1px solid #ffffff;
+            cursor: pointer;
+        }
+        .drpdn:hover{
+            background-color: #cccaca;
+            cursor: pointer;
+            
+        }
+        .mg:hover{
+            background-color: #f6a73f;
+            cursor: pointer;
+        }
+        .each:hover{
+            border: 1px solid white;
+        }
+        .opt:hover{
+            border: 1px solid white;
+        }
+
+
+
+
+
+        .first{
+            position: relative;
+           
+        }
+        .swiping-img{
+            width: 101%;
+            position: absolute;
+            
+        }
+        
+
+
+        .lft-arr{
+            position: relative;
+            height: 44px;
+            transform: translate(10px,100px);
+        }
+        .rt-arr{
+            position: relative;
+            height: 47px;
+            transform: translate(1426px,101px);
+        }
+        .second{
+            display: flex;
+            transform: translate(10px,235px);
+            justify-content: space-evenly;
+            background-color: #ffffff0e;
+        }
+        .container{
+            z-index:1;
+            height: 470px;
+            width: 360px;
+            background-color: white;
+            position:relative;
+        }
+        .second h2{
+            padding-left: 20px;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+            color: #0f1111;
+        }
+        .text{display:flex;
+            align-items:center;
+            
+        }
+        .para1{
+            padding-left: 21px;
+        }
+        .para2{
+            padding-left: 125px;
+
+        }
+        .four_img{
+            text-align: center;
+            padding-top: 20px;
+        }
+        .four_img img{
+            height: 117px;
+            width: 155px;
+            margin-right: 11px;
+        }
+        .four_img p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: 100;
+        }
+        .sec_img{
+            margin-top: 32px;
+        }
+        .container a {
+            text-decoration: none;
+            color: #2162a1;
+            padding-left: 3px;
+            margin-top: 12px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            transform: translate(10px , 30px);
+            position: absolute;
+        }
+        .container a:hover{
+            color: #0b1723;
+        }
+        #spr{
+            height: 118px;
+            width: 112px;
+            margin-right: 40px;
+            margin-left: 26px;
+        }
+        #gm{
+            height: 299px;
+            width: 325px;
+            margin: 0px;
+        }
+        .second img:hover{
+            cursor: pointer;
+        }
+        .second p:hover{
+            cursor: pointer;
+        }
+        .third{
+            position:relative;
+            transform: translate(10px,265px);
+            justify-content: space-evenly;
+            height: 281px;
+            background-color: white;
+            margin-left: 17px;
+            margin-right: 17px;
+        }
+        .third h2{
+            padding-top: 23px;
+            padding-bottom: 12px;
+            padding-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 21px;
+        }
+        
+            
+        
+        .si{
+            padding-right: 45px;
+        }
+        .si:hover{
+            cursor: pointer;
+        }
+
+        .last{
+            display: flex;
+            transform: translate(10px,290px);
+            justify-content: space-evenly;
+            background-color: #ffffff0e;
+        }
+        .last h2{
+            padding-left: 20px;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+            color: #0f1111;
+        }
+        #spr1{
+            height: 118px;
+            width: 151px;
+            margin-right: 12px;
+            margin-left: 8px;
+        }
+        .last img:hover{
+            cursor: pointer;
+        }
+        .last p:hover{
+            cursor: pointer;
+        }
+        .end-first{
+            background-color: #37475A;
+            height: 49px;
+            width: 100%;
+            position: relative;
+            transform: translate(10px, 316px)
+        }
+        .end-first p{
+            text-align: center;
+            padding: 15px;
+            color: #ffffff;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+        .end-first:hover{
+            cursor: pointer;
+            background-color: #4c586a;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="box1">
+                <div>
+                    <img class="amlogo" src="amazon_logo.png">
+                </div>
+                <div>
+                    <p class="i">.in </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="loc" src="8324266_ui_essential_app_location_map_icon.png" alt="error">
+                </div>
+                <div class="both">
+                    <div><p class="dt">Deliver to</p></div>
+                    <div> <p class="ind">India</p></div>
+                </div>
+            </div>
+            <div class="box3">
+                <div>
+                        <select class="drpdn">
+                            <option class="op" value="All" selected>All
+                            <option class="op" value="Art & Craft">Art & Craft</option>
+                            <option class="op" value="Automotive">Automotive</option>
+                            <option class="op" value="Baby">Baby</option>
+                            <option class="op" value="Beauty">Beauty</option>
+                            <option class="op" value="Electronics">Electronics</option>
+                            <option class="op" value="Fashion">Fashion</option>
+                        </select>
+                </div>
+                <div class="sb">
+                    <input type="text" placeholder="Search Amazon" id="sbox">
+                </div>
+                <div>
+                    <button class="mg"><img src="serch.png"></button>
+                </div>
+            </div>
+            <div class="box4">
+                <img src="flag.png">
+                <select class="lang">
+                    <option class="op" value="All" selected>EN
+                    </option>
+                </select>
+            </div>
+            <div class="box5">
+                    <p class="hell">Hello, sign in</p>
+                    <select class="sgn">
+                        <option value="acc" selected>Account & Lists</option>
+                    </select>
+            </div>
+            <div class="box6">
+                <p class="rtn">Returns</p>
+                <p class="odr">& Order</p>
+            </div> 
+            <div class="box7">
+                <div class="with-img">
+                 <p>0</p>
+                 <img  class="crt" src="cart.png" alt="error">
+                </div>
+                <div>
+                    <p class="ct">Cart</p>
+                </div>
+            </div>
+     
+        </nav>
+        <nav class="navbar2">
+            <button >
+                <div class="opt">
+                    <img src="opton.png">
+                    <p>All</p>
+                </div>
+            </button>
+            <div>
+                <ul class="lst">
+                    <li class="each">Today's Deals</li>
+                    <li class="each">Customer Service</li>
+                    <li class="each">Registry</li>
+                    <li class="each">Gift Card</li>
+                    <li class="each">Sell</li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    <div class="center">
+        <div class="first">
+            <div class="swiper-container">
+                <div class="swiper-slide">
+                    <img class="swiping-img" src="nav.jpg" alt="error">
+                </div>
+            </div>
+            <img class="lft-arr" src="la.png" alt="error">
+            <img class="rt-arr" src="la2.png" alt="error">
+
+        </div>
+        <div class="second">
+            <div class="container">
+                <h2>Shop deals in Fashion</h2>
+                <div class="four_img">
+                    <div>
+                        <img src="F1.jpg">
+                        <img src="F2.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="para1">Jeans</p>
+                        <p class="para2">Tops</p>
+                    </div>
+                    <div class="sec_img">
+                        <img src="F3.jpg">
+                        <img src="F4.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="para1">Shoes</p>
+                        <p class="para2">Dresses</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="www.google.com">Discover more in Fashion</a>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Gaming accessories</h2>
+                <div class="four_img">
+                    <div>
+                        <img id="gm" src="GA1.jpg">
+                    </div>
+                </div>
+                <div>
+                    <a href="www.google.com">Shop Gaming</a>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Home Essentials</h2>
+                <div class="four_img">
+                    <div>
+                        <img src="ha1.jpg">
+                        <img src="ha2.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="para1">Hotpots</p>
+                        <p class="para2">Mirrors</p>
+                    </div>
+                    <div class="sec_img">
+                        <img src="ha3.jpg">
+                        <img src="ha4.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="para1">cushions</p>
+                        <p class="para2">Paints</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="www.google.com">Discover More</a>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Sounds and Party</h2>
+                <div class="four_img">
+                    <div>
+                        <img id="spr" src="P1.jpg">
+                        <img id="spr" src="P2.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="para1">    JBL</p>
+                        <p class="para2">Boult Audio</p>
+                    </div>
+                    <div class="sec_img">
+                        <img id="spr" src="P3.jpg">
+                        <img id="spr" src="P4.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="para1">    Boat</p>
+                        <p class="para2">Sony</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="www.google.com">See More</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="third">
+                <h2>Best Sellers in Clothing, Shoes & Jewelry</h2>
+                <img class="si" src="cloth.jpg">
+                <img class="si" src="c1.jpg">
+                <img class="si" src="c2.jpg">
+                <img class="si" src="c3.jpg">
+                <img class="si" src="c4.jpg">
+                <img class="si" src="c5.jpg">
+                <img class="si" src="c7.jpg">
+                <img src="c6.jpg">
+            </div>
+
+        </div>
+        <div class="last">
+            <div class="container">
+                <h2>Top PCs & Accessories</h2>
+                <div class="four_img">
+                    <div>
+                        <img src="y1.jpg">
+                        <img src="y2.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="para1">CPU</p>
+                        <p class="para2">PCs</p>
+                    </div>
+                    <div class="sec_img">
+                        <img src="y3.jpg">
+                        <img src="y4.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="para1">SSD</p>
+                        <p class="para2">Accessories</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="www.google.com">Explore more</a>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Comfy Toys</h2>
+                <div class="four_img">
+                    <div>
+                        <img id="gm" src="ty.jpg">
+                    </div>
+                </div>
+                <div>
+                    <a href="www.google.com">Shop Toys</a>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Beauty Essentials</h2>
+                <div class="four_img">
+                    <div>
+                        <img src="MUP1.jpg">
+                        <img src="MUP2.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="para1">Skincare</p>
+                        <p class="para2">Makeup</p>
+                    </div>
+                    <div class="sec_img">
+                        <img src="MUP3.jpg">
+                        <img src="MUP4.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="para1">Nails</p>
+                        <p class="para2">Fragrances</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="www.google.com">Discover More in Beauty</a>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Home & Kitchen essentials</h2>
+                <div class="four_img">
+                    <div>
+                        <img id="spr1" src="KI1.jpg">
+                        <img id="spr1" src="KI2.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="para1">    Pots</p>
+                        <p class="para2">Filters</p>
+                    </div>
+                    <div class="sec_img">
+                        <img id="spr1" src="KI3.jpg">
+                        <img id="spr1" src="KI4.jpg">
+                    </div>
+                    <div class="text">
+                        <p class="para1">    Utensils</p>
+                        <p class="para2">Kettels</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="www.google.com">See More</a>
+                </div>
+            </div>
+
+    </div>
+   
+    <footer>
+        <div class="end-first">
+            <p>Back to top</p>
+        </div>
+    </footer>
+   
+</body>
+</html>
